@@ -21,10 +21,8 @@
   padding: 7px 0;
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-btnLikePrimary:hover {
-    color: rgb(var(--bs-primary-rgb), 40%);
-  }
+.ui-btnLikePrimary:hover {
+  color: rgb(var(--bs-primary-rgb), 40%);
 }
 
 .ui-btnLikePrimary:active {

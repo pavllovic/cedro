@@ -12,10 +12,8 @@
   display: block;
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-logo:hover {
-    opacity: 0.72;
-  }
+.ui-logo:hover {
+  opacity: 0.72;
 }
 
 /* hover style for uikit page */

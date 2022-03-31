@@ -21,10 +21,8 @@
   margin-left: var(--xs-space, 8px);
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-btnIcon:hover {
-    color: var(--bs-secondary, #d0bc7a);
-  }
+.ui-btnIcon:hover {
+  color: var(--bs-secondary, #d0bc7a);
 }
 
 /* hover style for uikit page */

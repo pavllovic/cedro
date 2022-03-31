@@ -137,14 +137,12 @@
   }
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-cardProduct:hover::after {
-    opacity: 0.4;
-  }
+.ui-cardProduct:hover::after {
+  opacity: 0.4;
+}
 
-  .ui-cardProduct:hover .title {
-    color: var(--bs-secondary, #d0bc7a);
-  }
+.ui-cardProduct:hover .title {
+  color: var(--bs-secondary, #d0bc7a);
 }
 
 /* hover style for uikit page */

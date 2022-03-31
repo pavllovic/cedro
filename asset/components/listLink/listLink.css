@@ -45,15 +45,13 @@
   transition-timing-function: ease-out;
 }
 
-@media not all and (any-pointer: coarse) {
-  .listLink .ui-link:hover,
-  .listLink .ui-link:focus:hover {
-    opacity: 0.4;
-  }
+.listLink .ui-link:hover,
+.listLink .ui-link:focus:hover {
+  opacity: 0.4;
+}
 
-  .listLink .ui-linkPrimary:hover .link-text {
-    opacity: 1;
-  }
+.listLink .ui-linkPrimary:hover .link-text {
+  opacity: 1;
 }
 
 /* hover style for uikit page */

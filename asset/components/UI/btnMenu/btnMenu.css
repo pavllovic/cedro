@@ -41,14 +41,12 @@
   transform: translateY(-5px) scaleY(1) rotateZ(-45deg);
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-btnMenu:hover {
-    color: var(--bs-secondary, #d0bc7a);
-  }
+.ui-btnMenu:hover {
+  color: var(--bs-secondary, #d0bc7a);
+}
 
-  .ui-btnMenu:hover span {
-    transform: translateY(0) scaleY(0.75);
-  }
+.ui-btnMenu:hover span {
+  transform: translateY(0) scaleY(0.75);
 }
 
 /* hover style for uikit page */

@@ -47,10 +47,8 @@
   fill: var(--color);
 }
 
-@media not all and (any-pointer: coarse) {
-  .socialLinks a:hover::after {
-    opacity: 1;
-  }
+.socialLinks a:hover::after {
+  opacity: 1;
 }
 
 /* hover style for uikit page */

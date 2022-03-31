@@ -26,10 +26,8 @@
   opacity: 1;
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-tab:hover {
-    opacity: 1;
-  }
+.ui-tab:hover {
+  opacity: 1;
 }
 
 /* hover style for uikit page */

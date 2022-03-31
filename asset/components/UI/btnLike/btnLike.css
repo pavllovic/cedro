@@ -20,10 +20,8 @@
   padding: 7px 0;
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-btnLike:hover {
-    color: rgb(var(--bs-primary-rgb), 40%);
-  }
+.ui-btnLike:hover {
+  color: rgb(var(--bs-primary-rgb), 40%);
 }
 
 .ui-btnLike:active {

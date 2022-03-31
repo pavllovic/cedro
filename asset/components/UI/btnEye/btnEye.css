@@ -42,10 +42,8 @@
   transform: rotateZ(-45deg) scale(1, 0.75);
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-btnEye:hover {
-    opacity: 1;
-  }
+.ui-btnEye:hover {
+  opacity: 1;
 }
 
 /* hover style for uikit page */

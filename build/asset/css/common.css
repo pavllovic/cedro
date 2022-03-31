@@ -204,10 +204,8 @@ h6,
 .ui-logo svg {
   display: block;
 }
-@media not all and (any-pointer: coarse) {
-  .ui-logo:hover {
-    opacity: 0.72;
-  }
+.ui-logo:hover {
+  opacity: 0.72;
 }
 /* hover style for uikit page */
 .ui-logo.hover {
@@ -237,11 +235,9 @@ h6,
   color: #fff;
   color: var(--bs-white, #fff);
 }
-@media not all and (any-pointer: coarse) {
-  .ui-btn:hover {
-    background-color: #d0bc7a;
-    background-color: var(--bs-secondary, #d0bc7a);
-  }
+.ui-btn:hover {
+  background-color: #d0bc7a;
+  background-color: var(--bs-secondary, #d0bc7a);
 }
 /* hover style for uikit page */
 .ui-btn.hover {
@@ -287,15 +283,12 @@ h6,
 .ui-btnMenu[aria-expanded="true"] span:nth-child(2) {
   transform: translateY(-5px) scaleY(1) rotateZ(-45deg);
 }
-@media not all and (any-pointer: coarse) {
-  .ui-btnMenu:hover {
-    color: #d0bc7a;
-    color: var(--bs-secondary, #d0bc7a);
-  }
-
-  .ui-btnMenu:hover span {
-    transform: translateY(0) scaleY(0.75);
-  }
+.ui-btnMenu:hover {
+  color: #d0bc7a;
+  color: var(--bs-secondary, #d0bc7a);
+}
+.ui-btnMenu:hover span {
+  transform: translateY(0) scaleY(0.75);
 }
 /* hover style for uikit page */
 .ui-btnMenu.hover {
@@ -327,15 +320,13 @@ h6,
   height: 100%;
   padding: 7px 0;
 }
-@media not all and (any-pointer: coarse) {
-  .ui-btnLike:hover {
-    color: rgba(33, 36, 46, 0.4);
-    color: rgb(33, 36, 46, 40%);
-    color: rgb(33 36 46 40%);
-    color: rgb(33, 36, 46 40%);
-    color: rgb(var(--bs-primary-rgb) 40%);
-    color: rgb(var(--bs-primary-rgb), 40%);
-  }
+.ui-btnLike:hover {
+  color: rgba(33, 36, 46, 0.4);
+  color: rgb(33, 36, 46, 40%);
+  color: rgb(33 36 46 40%);
+  color: rgb(33, 36, 46 40%);
+  color: rgb(var(--bs-primary-rgb) 40%);
+  color: rgb(var(--bs-primary-rgb), 40%);
 }
 .ui-btnLike:active {
   color: #d0bc7a;
@@ -375,15 +366,13 @@ h6,
   height: 100%;
   padding: 7px 0;
 }
-@media not all and (any-pointer: coarse) {
-  .ui-btnLikePrimary:hover {
-    color: rgba(33, 36, 46, 0.4);
-    color: rgb(33, 36, 46, 40%);
-    color: rgb(33 36 46 40%);
-    color: rgb(33, 36, 46 40%);
-    color: rgb(var(--bs-primary-rgb) 40%);
-    color: rgb(var(--bs-primary-rgb), 40%);
-  }
+.ui-btnLikePrimary:hover {
+  color: rgba(33, 36, 46, 0.4);
+  color: rgb(33, 36, 46, 40%);
+  color: rgb(33 36 46 40%);
+  color: rgb(33, 36, 46 40%);
+  color: rgb(var(--bs-primary-rgb) 40%);
+  color: rgb(var(--bs-primary-rgb), 40%);
 }
 .ui-btnLikePrimary:active {
   color: #d0bc7a;
@@ -442,10 +431,8 @@ h6,
 .ui-btnEye[aria-pressed="true"]::after {
   transform: rotateZ(-45deg) scale(1, 0.75);
 }
-@media not all and (any-pointer: coarse) {
-  .ui-btnEye:hover {
-    opacity: 1;
-  }
+.ui-btnEye:hover {
+  opacity: 1;
 }
 /* hover style for uikit page */
 .ui-btnEye.hover {
@@ -475,11 +462,9 @@ h6,
   margin-left: 8px;
   margin-left: var(--xs-space, 8px);
 }
-@media not all and (any-pointer: coarse) {
-  .ui-btnIcon:hover {
-    color: #d0bc7a;
-    color: var(--bs-secondary, #d0bc7a);
-  }
+.ui-btnIcon:hover {
+  color: #d0bc7a;
+  color: var(--bs-secondary, #d0bc7a);
 }
 /* hover style for uikit page */
 .ui-btnIcon.hover {
@@ -547,16 +532,14 @@ h6,
   transition-property: opacity, color;
   transition-timing-function: ease-out, ease-out;
 }
-@media not all and (any-pointer: coarse) {
-  .ui-input:hover::-moz-placeholder {
-    opacity: 0.8;
-  }
-  .ui-input:hover:-ms-input-placeholder {
-    opacity: 0.8;
-  }
-  .ui-input:hover::placeholder {
-    opacity: 0.8;
-  }
+.ui-input:hover::-moz-placeholder {
+  opacity: 0.8;
+}
+.ui-input:hover:-ms-input-placeholder {
+  opacity: 0.8;
+}
+.ui-input:hover::placeholder {
+  opacity: 0.8;
 }
 .ui-input.valid {
   color: #d0bc7a;
@@ -607,33 +590,24 @@ h6,
   color: #d0bc7a;
   color: var(--bs-secondary, #d0bc7a);
 }
-/* .ui-link .link-text,
-.ui-linkPrimary .link-text,
-.ui-linkSecondary .link-text {
-  margin: 0 var(--xs-space, 8px);
-} */
 .link-text + .icon,
 .icon + .link-text {
   margin-left: 8px;
   margin-left: var(--xs-space, 8px);
 }
-@media not all and (any-pointer: coarse) {
-  .ui-link:hover,
-  .ui-link:focus:hover {
-    color: inherit;
-    opacity: 0.72;
-  }
-
-  .ui-linkPrimary:hover,
-  .ui-linkPrimary:focus:hover {
-    color: #d0bc7a;
-    color: var(--bs-secondary, #d0bc7a);
-  }
-
-  .ui-linkSecondary:hover,
-  .ui-linkSecondary:focus:hover {
-    color: inherit;
-  }
+.ui-link:hover,
+.ui-link:focus:hover {
+  color: inherit;
+  opacity: 0.72;
+}
+.ui-linkPrimary:hover,
+.ui-linkPrimary:focus:hover {
+  color: #d0bc7a;
+  color: var(--bs-secondary, #d0bc7a);
+}
+.ui-linkSecondary:hover,
+.ui-linkSecondary:focus:hover {
+  color: inherit;
 }
 .ui-linkSecondary:focus {
   color: #d0bc7a;
@@ -681,10 +655,8 @@ h6,
   color: var(--bs-secondary);
   opacity: 1;
 }
-@media not all and (any-pointer: coarse) {
-  .ui-tab:hover {
-    opacity: 1;
-  }
+.ui-tab:hover {
+  opacity: 1;
 }
 /* hover style for uikit page */
 .ui-tab.hover {
@@ -817,15 +789,12 @@ h6,
   margin-bottom: 8px;
   margin-bottom: var(--xs-space, 8px);
 }
-@media not all and (any-pointer: coarse) {
-  .ui-cardProduct:hover::after {
-    opacity: 0.4;
-  }
-
-  .ui-cardProduct:hover .title {
-    color: #d0bc7a;
-    color: var(--bs-secondary, #d0bc7a);
-  }
+.ui-cardProduct:hover::after {
+  opacity: 0.4;
+}
+.ui-cardProduct:hover .title {
+  color: #d0bc7a;
+  color: var(--bs-secondary, #d0bc7a);
 }
 /* hover style for uikit page */
 .ui-cardProduct.hover::after {
@@ -1021,10 +990,8 @@ h6,
 
   fill: var(--color);
 }
-@media not all and (any-pointer: coarse) {
-  .socialLinks a:hover::after {
-    opacity: 1;
-  }
+.socialLinks a:hover::after {
+  opacity: 1;
 }
 /* hover style for uikit page */
 .socialLinks a.hover::after {
@@ -1141,15 +1108,12 @@ h6,
   transition-property: opacity;
   transition-timing-function: ease-out;
 }
-@media not all and (any-pointer: coarse) {
-  .listLink .ui-link:hover,
-  .listLink .ui-link:focus:hover {
-    opacity: 0.4;
-  }
-
-  .listLink .ui-linkPrimary:hover .link-text {
-    opacity: 1;
-  }
+.listLink .ui-link:hover,
+.listLink .ui-link:focus:hover {
+  opacity: 0.4;
+}
+.listLink .ui-linkPrimary:hover .link-text {
+  opacity: 1;
 }
 /* hover style for uikit page */
 .listLink .ui-link.hover {

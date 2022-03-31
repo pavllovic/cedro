@@ -23,10 +23,8 @@
   transition-timing-function: ease-out, ease-out;
 }
 
-@media not all and (any-pointer: coarse) {
-  .ui-input:hover::placeholder {
-    opacity: 0.8;
-  }
+.ui-input:hover::placeholder {
+  opacity: 0.8;
 }
 
 .ui-input.valid {
