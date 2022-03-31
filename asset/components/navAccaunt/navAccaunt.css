@@ -1,0 +1,42 @@
+/* --- style nav-accaunt --- */
+.navAccaunt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navAccaunt .ui-linkPrimary {
+  padding: 0;
+  margin-right: var(--md-space, 16px);
+  font-size: var(--fs-6, 14px);
+  font-weight: 500;
+  line-height: calc(24 / 14);
+  text-transform: uppercase;
+}
+
+.navAccaunt .ui-linkPrimary:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.navAccaunt .ui-linkPrimary.active {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+@media (min-width: 992px) {
+  .navAccaunt {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navAccaunt .ui-linkPrimary {
+    margin-right: 0;
+    margin-bottom: var(--sm-space, 12px);
+  }
+
+  .navAccaunt .ui-linkPrimary:last-child {
+    margin-left: 0;
+  }
+}
+
+/* --- end style nav-accaunt --- */

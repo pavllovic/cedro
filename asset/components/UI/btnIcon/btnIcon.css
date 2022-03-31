@@ -1,0 +1,37 @@
+/* --- style ui-btnIcon --- */
+
+.ui-btnIcon {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0%);
+  color: inherit;
+  font-size: var(--fs-5, 16px);
+  font-weight: 500;
+  line-height: var(--lh-5);
+  text-decoration: none;
+  transition-duration: 0.4s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+.ui-btnIcon .icon {
+  width: 16px;
+  height: 16px;
+  margin-left: var(--xs-space, 8px);
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-btnIcon:hover {
+    color: var(--bs-secondary, #d0bc7a);
+  }
+}
+
+/* hover style for uikit page */
+.ui-btnIcon.hover {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+/* end hover style for uikit page */
+
+/* --- end style ui-btnIcon --- */

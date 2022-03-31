@@ -1,0 +1,49 @@
+/* --- style ui-input --- */
+.ui-input {
+  padding: var(--md-space, 16px);
+  border: none;
+  background-color: var(--bg-ligth, #f7f7f7);
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+.ui-input:focus {
+  background-color: var(--bg-ligth, #f7f7f7);
+}
+
+.ui-input::placeholder {
+  color: inherit;
+  opacity: 0.4;
+  transition-duration: 0.4s, 0.4s;
+  transition-property: opacity, color;
+  transition-timing-function: ease-out, ease-out;
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-input:hover::placeholder {
+    opacity: 0.8;
+  }
+}
+
+.ui-input.valid {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+.ui-input.invalid,
+.ui-input.invalid::placeholder {
+  color: var(--bs-danger, #da7070);
+  opacity: 1;
+}
+
+/* hover style for uikit page */
+.ui-input.hover::placeholder {
+  opacity: 0.8;
+}
+
+/* end hover style for uikit page */
+
+/* --- end style ui-input --- */

@@ -1,0 +1,48 @@
+/* --- style carousel --- */
+.carousel {
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+/* for owl.carousel plugin */
+.carousel-outer {
+  overflow: visible;
+}
+
+/* for owl.carousel plugin */
+.carousel-stage {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  margin-right: var(--xs-space, 8px);
+}
+
+.carousel-item:last-child {
+  margin-right: 0;
+}
+
+.carousel .slide {
+  flex-shrink: 0;
+  margin-right: var(--xs-space, 8px);
+}
+
+.carousel .slide:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    margin-right: var(--xl-space, 32px);
+  }
+
+  .carousel .slide {
+    margin-right: var(--xl-space, 32px);
+  }
+}
+
+/* --- end style carousel --- */

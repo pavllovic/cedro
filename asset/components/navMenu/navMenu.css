@@ -1,0 +1,14 @@
+/* --- style navMenu --- */
+.navMenu .listLink {
+  margin-top: var(--xl-space, 32px);
+  margin-bottom: var(--xs-space, 8px);
+}
+
+@media (min-width: 992px) {
+  .navMenu .listLink {
+    margin-top: var(--lg-space, 24px);
+    margin-bottom: var(--lg-space, 24px);
+  }
+}
+
+/* --- end style navMenu --- */

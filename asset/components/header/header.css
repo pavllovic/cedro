@@ -1,0 +1,74 @@
+/* --- style header --- */
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--bs-gray, #ebebeb);
+}
+
+.header .box {
+  display: flex;
+  max-width: 1280px;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: var(--md-space, 16px);
+  margin: 0 auto;
+}
+
+.header .ui-logo {
+  position: relative;
+  z-index: 3;
+  margin-right: auto;
+}
+
+.header .navProduct {
+  display: none;
+  margin: 0 auto;
+}
+
+.header .link-phone .icon {
+  width: 32px;
+  height: 32px;
+  padding: 8px 0;
+}
+
+.header .link-phone .link-text {
+  display: none;
+  margin: 0;
+  font-size: var(--fs-6, 14px);
+  font-weight: 500;
+  letter-spacing: 4%;
+  line-height: var(--lh-6);
+}
+
+.header .menu {
+  margin-left: var(--md-space, 16px);
+}
+
+@media (min-width: 992px) {
+  .header .ui-logo {
+    margin-right: 0;
+  }
+
+  .header .navProduct {
+    display: flex;
+  }
+
+  .header .menu {
+    margin-left: var(--xl-space, 32px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header .box {
+    padding: var(--md-space, 16px) 32px;
+  }
+
+  .header .navMain {
+    margin-left: var(--xl-space, 32px);
+  }
+
+  .header .link-phone .link-text {
+    display: block;
+  }
+}
+
+/* --- end style header --- */

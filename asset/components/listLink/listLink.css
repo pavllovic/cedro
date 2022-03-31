@@ -1,0 +1,78 @@
+/* --- style listLink --- */
+.listLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listLink .heading {
+  margin-bottom: var(--md-space, 16px);
+  line-height: 1;
+}
+
+.listLink .item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--xs-space, 8px);
+}
+
+.listLink .item:last-child {
+  margin-bottom: 0;
+}
+
+.listLink .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.listLink .icon {
+  width: 16px;
+  height: 16px;
+  align-self: flex-start;
+  padding: 0 2px;
+  margin-top: 4px;
+}
+
+.listLink .ui-link,
+.listLink .link-text {
+  opacity: 0.8;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+@media not all and (any-pointer: coarse) {
+  .listLink .ui-link:hover,
+  .listLink .ui-link:focus:hover {
+    opacity: 0.4;
+  }
+
+  .listLink .ui-linkPrimary:hover .link-text {
+    opacity: 1;
+  }
+}
+
+/* hover style for uikit page */
+.listLink .ui-link.hover {
+  opacity: 0.4;
+}
+
+.listLink .ui-linkPrimary.hover .link-text {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .listLink .heading {
+    margin-bottom: var(--lg-space, 24px);
+  }
+
+  .listLink .item {
+    margin-bottom: var(--md-space, 16px);
+  }
+}
+
+/* --- end style listLink --- */

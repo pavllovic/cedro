@@ -1,0 +1,34 @@
+/* --- style carouselProduct --- */
+.carouselProduct {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carouselProduct .carousel {
+  margin-top: var(--xl-space, 32px);
+  margin-bottom: var(--xl-space, 32px);
+}
+
+.carouselProduct .heading {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.carouselProduct .ui-btnIcon {
+  order: 1;
+}
+
+@media (min-width: 992px) {
+  .carouselProduct .carousel {
+    margin-top: var(--xxl-space, 48px);
+    margin-bottom: 0;
+  }
+
+  .carouselProduct .ui-btnIcon {
+    order: 0;
+  }
+}
+
+/* --- end style carouselProduct --- */

@@ -1,0 +1,27 @@
+/* --- style form --- */
+form .label {
+  margin-bottom: var(--xs-space, 8px);
+  color: rgb(var(--bs-body-rgb), 0.4);
+}
+
+form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--md-space, 16px);
+}
+
+form .field:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  form .label {
+    margin-bottom: var(--sm-space, 12px);
+  }
+
+  form .field {
+    margin-bottom: var(--lg-space, 24px);
+  }
+}
+
+/* --- end style form --- */

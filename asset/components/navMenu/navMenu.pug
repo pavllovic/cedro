@@ -1,0 +1,64 @@
+include ../listLink/listLink.pug
+
+- 
+  var productListLink = {
+    heading: 'Продукция', 
+    hrefHeading: 'javascript:void(0);',
+    links: [
+      {href: 'javascript:void(0);', text: 'Пигменты'},
+      {href: 'javascript:void(0);', text: 'Пигменты'},
+      {href: 'javascript:void(0);', text: 'Аппараты'},
+      {href: 'javascript:void(0);', text: 'Иглы'},
+      {href: 'javascript:void(0);', text: 'Расходные материалы'},
+    ] 
+  }
+
+  var companyListLink = {
+    heading: 'Компания', 
+    hrefHeading: 'javascript:void(0);',
+    links: [
+      {href: 'javascript:void(0);', text: 'Блог'},
+      {href: 'javascript:void(0);', text: 'Обучение'},
+      {href: 'javascript:void(0);', text: 'Стать представителем'},
+      {href: 'javascript:void(0);', text: 'Контакты'},
+      {href: 'javascript:void(0);', text: 'Политика конфиденциальности'},
+    ]
+  }
+  
+// navMain
+div(class='navMenu container-xl')
+  div(class='row')
+    div(class='col-lg-4')
+      +listLink(productListLink)
+    div(class='col-lg-4')
+      +listLink(companyListLink)
+    div(class='col-lg-4')
+      // listLink
+      section(class='listLink')
+        h3(class='heading') 
+          a(class='ui-linkPrimary' href='javascript:void(0);' title='Контакты') Контакты
+        ul(class='list')
+          li(class='item')
+            a(class='ui-linkPrimary' href="tel:+78005553535" title='Телефон')
+              span(class='icon')
+                svg(focusable='false' aria-hidden='true')
+                  use(href='#icon-phone-2')
+              span(class='link-text') 8 (800) 555-35-35
+          li(class='item')
+            a(class='ui-linkPrimary' href="mailto:cedro@yandex.ru" title='email') 
+              span(class='icon')
+                svg(focusable='false' aria-hidden='true')
+                  use(href='#icon-mail')
+              span(class='link-text') cedro@yandex.ru
+          li(class='item')
+            span(class='icon')
+              svg(focusable='false' aria-hidden='true')
+                use(href='#icon-clock')
+            span(class='link-text') Время работы: пн - пт с 10 до 19 
+          li(class='item')
+            span(class='icon')  
+              svg(focusable='false' aria-hidden='true')
+                use(href='#icon-location')
+            span(class='link-text') г. Санкт-Петербург,<br/> м. Звездная
+      // end listLink
+// end navMain

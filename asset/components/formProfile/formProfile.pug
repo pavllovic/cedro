@@ -1,0 +1,41 @@
+// formProfile
+form(class='formProfile js-formValidate' name='form-profile')
+  fieldset
+    legend Данные профиля
+    div(class='field')
+      label(class='label' for='profileName') ФИО
+      input(type='text' class='ui-input' value='Алексеева Ульяна Евгеньевна' name='name' id='profileName' required)
+    div(class='field')
+      label(class='label' for='profileEmail') Почта
+      input(type='email' inputmode='email' class='ui-input' value='pochta07@mail.ru' name='email' id='profileEmail' required)
+    div(class='field')
+      label(class='label' for='profilePhone') Телефон
+      input(type='tel' inputmode='tel' class='ui-input js-inputPhone' value='+7 (999) 999-99-99' name='phone' id='profilePhone' required)
+    div(class='field')
+      label(class='label' for='profileLogin') Имя аккаунта
+      input(type='text' class='ui-input' value='Alex Y.E.' name='login' id='profileLogin')
+    div(class='field')
+      label(class='label' for='profileInstagram') Профиль в инстаграм
+      input(type='text' inputmode='email' class='ui-input' value='@Alex_YE' name='instagram' id='profileInstagram' required)
+    div(class='field')
+      label(class='label' for='profileAddress') Адрес доставки
+      input(type='text' class='ui-input' placeholder='Город, улица, дом' name='address' id='profileAddress' required)
+  fieldset
+    legend Изменить пароль
+    div(class='field')
+      label(class='label' for='profileOldPassword') Старый пароль
+      div(class='ui-inputPassword js-inputPassword')
+        input(type='password' class='ui-input' name='old_password' id='profileOldPassword' data-password='input')
+        // btnEye
+        button(class='ui-btnEye' type='button' aria-pressed='false' data-password='btn')
+          span(class='visually-hidden') показать пароль
+          span(class='icon')
+            svg(focusable='false' aria-hidden='true')
+              use(href='#icon-eye')
+        // end btnEye
+    div(class='field')
+      label(class='label' for='profileNewPassword') Новый пароль
+      input(type='text' class='ui-input' placeholder='Введите новый пароль' name='password' id='profileNewPassword')
+  fieldset
+    button(type='submit' class="ui-btn") Сохранить изменения
+// end formProfile

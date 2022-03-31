@@ -1,0 +1,65 @@
+/* --- style ui-link --- */
+.ui-link,
+.ui-linkPrimary,
+.ui-linkSecondary {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.4s, 0.4s;
+  transition-property: opacity, color;
+  transition-timing-function: ease-out, ease-out;
+}
+
+.ui-linkSecondary {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+/* .ui-link .link-text,
+.ui-linkPrimary .link-text,
+.ui-linkSecondary .link-text {
+  margin: 0 var(--xs-space, 8px);
+} */
+
+.link-text + .icon,
+.icon + .link-text {
+  margin-left: var(--xs-space, 8px);
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-link:hover,
+  .ui-link:focus:hover {
+    color: inherit;
+    opacity: 0.72;
+  }
+
+  .ui-linkPrimary:hover,
+  .ui-linkPrimary:focus:hover {
+    color: var(--bs-secondary, #d0bc7a);
+  }
+
+  .ui-linkSecondary:hover,
+  .ui-linkSecondary:focus:hover {
+    color: inherit;
+  }
+}
+
+.ui-linkSecondary:focus {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+/* hover style for uikit page */
+.ui-link.hover {
+  opacity: 0.72;
+}
+
+.ui-linkPrimary.hover {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+.ui-linkSecondary.hover {
+  color: inherit;
+}
+
+/* --- end style ui-link --- */

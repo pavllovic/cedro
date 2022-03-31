@@ -1,0 +1,15 @@
+include ../UI/cardProduct/cardProduct.pug
+
+// carouselProduct
+section(class='carouselProduct')
+  h2(class='heading') <span class='text-accent'>тренды</span> сезона
+  a(class='ui-btnIcon' href='javascript:void(0);') 
+    span Перейти в каталог
+    span(class='icon')
+      svg(focusable='false' aria-hidden='true')
+        use(href='#icon-circle-arrow')
+  div(class='carousel js-carousel')
+    each product in products
+      div(class='slide')
+        +cardProduct(product)
+// end carouselProduct

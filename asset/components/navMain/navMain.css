@@ -1,0 +1,13 @@
+/* --- style navMain --- */
+.navMain {
+  display: flex;
+  align-items: center;
+}
+
+.navMain .icon {
+  width: 32px;
+  height: 32px;
+  padding: 8px 0;
+}
+
+/* --- end style navMain --- */

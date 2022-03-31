@@ -1,0 +1,80 @@
+@import "../components/formProfile/formProfile.css";
+@import "../components/carouselProduct/carouselProduct.css";
+@import "../components/carousel/carousel.css";
+
+/* --- style for profile page --- */
+.wrapper {
+  overflow: hidden;
+}
+
+.mainNav {
+  padding-top: var(--xs-space, 8px);
+  padding-bottom: var(--xs-space, 8px);
+  border-bottom: 1px solid var(--bs-gray, #ebebeb);
+}
+
+.mainContent {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: var(--xl-space, 32px);
+  padding-bottom: var(--xl-space, 32px);
+}
+
+.mainHeading {
+  margin-bottom: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.main .formProfile {
+  max-width: 544px;
+}
+
+.aside {
+  padding-bottom: var(--xl-space, 32px);
+}
+
+.aside .carouselProduct {
+  margin-bottom: var(--xl-space, 32px);
+}
+
+@media (min-width: 992px) {
+  .mainContent {
+    border-left: 1px solid var(--bs-gray, #ebebeb);
+  }
+
+  .mainNav {
+    padding-top: var(--xl-space, 32px);
+    padding-bottom: var(--xl-space, 32px);
+    border-bottom: none;
+  }
+
+  .mainHeading {
+    width: calc((100% + var(--bs-gutter-x)) / 100 * 80 - var(--bs-gutter-x));
+    margin-right: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+    margin-left: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+  }
+
+  .main .formProfile {
+    width: calc((100% + var(--bs-gutter-x)) / 100 * 60 - var(--bs-gutter-x));
+    margin-right: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+    margin-left: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+  }
+
+  .aside {
+    padding-top: var(--xl-space, 32px);
+    padding-bottom: var(--xl-space, 32px);
+    border-top: 1px solid var(--bs-gray, #ebebeb);
+  }
+
+  .mainHeading,
+  .mainNav .navAccaunt,
+  .aside .carouselProduct {
+    margin-top: var(--xxxl-space, 80px);
+    margin-bottom: var(--xxxl-space, 80px);
+  }
+}
+
+/* --- end style for profile page --- */

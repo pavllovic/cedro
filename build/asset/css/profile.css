@@ -1,0 +1,223 @@
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/media-query-plugin/src/loader.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./asset/styles/profile.css ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/* --- style formProfile --- */
+.formProfile fieldset {
+  padding-top: 32px;
+  padding-top: var(--xl-space, 32px);
+  padding-bottom: 32px;
+  padding-bottom: var(--xl-space, 32px);
+}
+.formProfile fieldset::before {
+  position: absolute;
+  left: calc(var(--bs-gutter-x) / -2);
+  width: calc(100vw + var(--bs-gutter-x) / 2);
+  height: 1px;
+  background-color: #ebebeb;
+  background-color: var(--bs-gray, #ebebeb);
+  content: "";
+  transform: translateY(calc(32px * -1));
+  transform: translateY(calc(var(--xl-space, 32px) * -1));
+}
+.formProfile fieldset:first-child::before {
+  display: none;
+}
+.formProfile legend {
+  margin-bottom: 32px;
+  margin-bottom: var(--xl-space, 32px);
+  font-size: 24px;
+  font-size: var(--fs-3, 24px);
+  font-weight: 500;
+  line-height: var(--lh-3);
+}
+.formProfile [type="submit"] {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .formProfile fieldset {
+    padding-top: 80px;
+    padding-top: var(--xxxl-space, 80px);
+    padding-bottom: 80px;
+    padding-bottom: var(--xxxl-space, 80px);
+  }
+
+  .formProfile fieldset::before {
+    left: 0;
+    transform: translateY(calc(80px * -1));
+    transform: translateY(calc(var(--xxxl-space, 80px) * -1));
+  }
+
+  .formProfile fieldset:first-child::before {
+    display: block;
+  }
+
+  .formProfile legend {
+    margin-bottom: 48px;
+    margin-bottom: var(--xxl-space, 48px);
+  }
+
+  .formProfile [type="submit"] {
+    width: auto;
+  }
+}
+/* --- end style formProfile --- */
+/* --- style carouselProduct --- */
+.carouselProduct {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.carouselProduct .carousel {
+  margin-top: 32px;
+  margin-top: var(--xl-space, 32px);
+  margin-bottom: 32px;
+  margin-bottom: var(--xl-space, 32px);
+}
+.carouselProduct .heading {
+  margin: 0;
+  text-transform: uppercase;
+}
+.carouselProduct .ui-btnIcon {
+  order: 1;
+}
+@media (min-width: 992px) {
+  .carouselProduct .carousel {
+    margin-top: 48px;
+    margin-top: var(--xxl-space, 48px);
+    margin-bottom: 0;
+  }
+
+  .carouselProduct .ui-btnIcon {
+    order: 0;
+  }
+}
+/* --- end style carouselProduct --- */
+/* --- style carousel --- */
+.carousel {
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+/* for owl.carousel plugin */
+.carousel-outer {
+  overflow: visible;
+}
+/* for owl.carousel plugin */
+.carousel-stage {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.carousel-item {
+  flex-shrink: 0;
+  margin-right: 8px;
+  margin-right: var(--xs-space, 8px);
+}
+.carousel-item:last-child {
+  margin-right: 0;
+}
+.carousel .slide {
+  flex-shrink: 0;
+  margin-right: 8px;
+  margin-right: var(--xs-space, 8px);
+}
+.carousel .slide:last-child {
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  .carousel-item {
+    margin-right: 32px;
+    margin-right: var(--xl-space, 32px);
+  }
+
+  .carousel .slide {
+    margin-right: 32px;
+    margin-right: var(--xl-space, 32px);
+  }
+}
+/* --- end style carousel --- */
+/* --- style for profile page --- */
+.wrapper {
+  overflow: hidden;
+}
+.mainNav {
+  padding-top: 8px;
+  padding-top: var(--xs-space, 8px);
+  padding-bottom: 8px;
+  padding-bottom: var(--xs-space, 8px);
+  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid var(--bs-gray, #ebebeb);
+}
+.mainContent {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-top: var(--xl-space, 32px);
+  padding-bottom: 32px;
+  padding-bottom: var(--xl-space, 32px);
+}
+.mainHeading {
+  margin-bottom: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.main .formProfile {
+  max-width: 544px;
+}
+.aside {
+  padding-bottom: 32px;
+  padding-bottom: var(--xl-space, 32px);
+}
+.aside .carouselProduct {
+  margin-bottom: 32px;
+  margin-bottom: var(--xl-space, 32px);
+}
+@media (min-width: 992px) {
+  .mainContent {
+    border-left: 1px solid #ebebeb;
+    border-left: 1px solid var(--bs-gray, #ebebeb);
+  }
+
+  .mainNav {
+    padding-top: 32px;
+    padding-top: var(--xl-space, 32px);
+    padding-bottom: 32px;
+    padding-bottom: var(--xl-space, 32px);
+    border-bottom: none;
+  }
+
+  .mainHeading {
+    width: calc((100% + var(--bs-gutter-x)) / 100 * 80 - var(--bs-gutter-x));
+    margin-right: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+    margin-left: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+  }
+
+  .main .formProfile {
+    width: calc((100% + var(--bs-gutter-x)) / 100 * 60 - var(--bs-gutter-x));
+    margin-right: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+    margin-left: calc((100% + var(--bs-gutter-x)) / 100 * 10);
+  }
+
+  .aside {
+    padding-top: 32px;
+    padding-top: var(--xl-space, 32px);
+    padding-bottom: 32px;
+    padding-bottom: var(--xl-space, 32px);
+    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--bs-gray, #ebebeb);
+  }
+
+  .mainHeading,
+  .mainNav .navAccaunt,
+  .aside .carouselProduct {
+    margin-top: 80px;
+    margin-top: var(--xxxl-space, 80px);
+    margin-bottom: 80px;
+    margin-bottom: var(--xxxl-space, 80px);
+  }
+}
+/* --- end style for profile page --- */
+

@@ -1,0 +1,19 @@
+/* --- style form-error --- */
+.formError {
+  overflow: hidden;
+  margin-top: 4px;
+  transition-duration: 0.4s, 0.4s;
+  transition-property: height, opacity;
+  transition-timing-function: ease-in, ease-in;
+}
+
+.formError .msg {
+  color: var(--bs-danger, #da7070);
+  font-size: var(--fs-6);
+  line-height: var(--lh-6);
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+/* --- end style form-error --- */

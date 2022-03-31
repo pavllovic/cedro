@@ -1,0 +1,46 @@
+/* --- style ui-btnLikePrimary --- */
+.ui-btnLikePrimary {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  color: #e4e4e4;
+  transition-duration: 0.4s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+.ui-btnLikePrimary .icon {
+  width: 100%;
+  height: 100%;
+  padding: 7px 0;
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-btnLikePrimary:hover {
+    color: rgb(var(--bs-primary-rgb), 40%);
+  }
+}
+
+.ui-btnLikePrimary:active {
+  color: var(--bs-secondary, #d0bc7a);
+  transition-duration: 0.1s;
+}
+
+/* hover style for uikit page */
+.ui-btnLikePrimary.hover {
+  color: rgba(var(--bs-primary-rgb), 40%);
+}
+
+/* active style for uikit page */
+.ui-btnLikePrimary.active {
+  color: var(--bs-secondary, #d0bc7a);
+  transition-duration: 0.1s;
+}
+
+/* --- end style ui-btnLikePrimary --- */

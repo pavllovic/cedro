@@ -1,0 +1,159 @@
+/* --- style ui-cardProduct --- */
+.ui-cardProduct {
+  position: relative;
+  min-width: 256px;
+  padding: 0;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+}
+
+.ui-cardProduct::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid currentcolor;
+  border-radius: inherit;
+  content: "";
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+.ui-cardProduct .ui-btnLike {
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  right: 12px;
+}
+
+.ui-cardProduct .badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: inline-block;
+  padding: 4px 12px;
+  padding-bottom: 6px;
+  background-color: var(--bs-red, #eb5757);
+  border-radius: 100px;
+  color: var(--bs-white, #fff);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.ui-cardProduct .link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.ui-cardProduct .image {
+  display: flex;
+  width: 100%;
+  height: 256px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-cardProduct .image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.ui-cardProduct .color {
+  height: 12px;
+  background-color: var(--product-color, #f7f7f7);
+}
+
+.ui-cardProduct .body {
+  display: flex;
+  flex-direction: column;
+  padding: var(--md-space);
+}
+
+.ui-cardProduct .title {
+  margin-bottom: var(--xs-space, 8px);
+  font-family: var(--font-serif);
+  font-size: var(--fs-4);
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--lh-4);
+  transition-duration: 0.4s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+.ui-cardProduct .price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: var(--xs-space, 8px);
+  font-family: var(--font-serif);
+  font-size: var(--fs-4);
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--lh-4);
+}
+
+.ui-cardProduct .price span:nth-child(1) {
+  margin-right: var(--sm-space, 12px);
+}
+
+.ui-cardProduct .price span:nth-child(2) {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.ui-cardProduct p {
+  margin-bottom: var(--xs-space, 8px);
+}
+
+@media (min-width: 992px) {
+  .ui-cardProduct .ui-btnLike {
+    top: 22px;
+    right: 20px;
+  }
+
+  .ui-cardProduct .badge {
+    top: 24px;
+    left: 24px;
+  }
+
+  .ui-cardProduct .body {
+    padding: var(--lg-space);
+  }
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-cardProduct:hover::after {
+    opacity: 0.4;
+  }
+
+  .ui-cardProduct:hover .title {
+    color: var(--bs-secondary, #d0bc7a);
+  }
+}
+
+/* hover style for uikit page */
+.ui-cardProduct.hover::after {
+  opacity: 0.4;
+}
+
+.ui-cardProduct.hover .title {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+/* --- end style ui-cardProduct --- */

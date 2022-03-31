@@ -1,0 +1,12 @@
+/* --- style tabs --- */
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tablist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* --- end style tabs --- */

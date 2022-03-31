@@ -1,0 +1,45 @@
+/* --- style menu --- */
+.menu {
+  position: static;
+}
+
+.menu .ui-btnMenu {
+  position: relative;
+  z-index: 3;
+}
+
+.menu .menuMenu {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  background-color: var(--bs-body-bg, #fff);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition-delay: 0.4s, 0s, 0.4s;
+  transition-duration: 0s, 0.2s, 0.4s;
+  transition-property: visibility, opacity, transform;
+  transition-timing-function: ease-out, ease-out, ease-out;
+  visibility: hidden;
+}
+
+.menu .menuMenu.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s, 0s, 0s;
+  visibility: visible;
+}
+
+@media (min-width: 992px) {
+  .menu .menuMenu {
+    padding-top: 244px;
+    padding-bottom: 244px;
+  }
+}
+
+/* --- end style menu --- */

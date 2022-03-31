@@ -1,0 +1,11 @@
+mixin listLink(list)
+  // listLink
+  section(class='listLink')
+    h3(class='heading') 
+      a(class='ui-linkPrimary' href=`${list.hrefHeading}` title=`${list.heading}`) #{list.heading}
+    ul(class='list')
+      each link in list.links
+        li(class='item')
+          a(class='ui-link' href=`${link.href}` title=`${link.text}`) 
+            span #{link.text}
+  // end listLink

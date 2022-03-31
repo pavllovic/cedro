@@ -1,0 +1,42 @@
+/* --- style ui-tab --- */
+.ui-tab {
+  padding: 0;
+  border: none;
+  margin-top: var(--xs-space, 8px);
+  margin-right: 20px;
+  margin-bottom: var(--xs-space, 8px);
+  background-color: rgba(255, 255, 255, 0%);
+  color: inherit;
+  font-size: var(--fs-6, 14px);
+  font-weight: 500;
+  line-height: var(--lh-6);
+  opacity: 0.56;
+  text-transform: uppercase;
+  transition-duration: 0.4s, 0.4s;
+  transition-property: opacity, color;
+  transition-timing-function: ease-out, ease-out;
+}
+
+.ui-tab:last-child {
+  margin-right: 0;
+}
+
+.ui-tab.active {
+  color: var(--bs-secondary);
+  opacity: 1;
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-tab:hover {
+    opacity: 1;
+  }
+}
+
+/* hover style for uikit page */
+.ui-tab.hover {
+  opacity: 1;
+}
+
+/* end hover style for uikit page */
+
+/* --- end style ui-tab --- */

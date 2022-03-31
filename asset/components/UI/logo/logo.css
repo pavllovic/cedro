@@ -1,0 +1,26 @@
+/* --- style ui-logo --- */
+.ui-logo {
+  display: inline-block;
+  padding: 9px 5px;
+  line-height: 1;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+.ui-logo svg {
+  display: block;
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-logo:hover {
+    opacity: 0.72;
+  }
+}
+
+/* hover style for uikit page */
+.ui-logo.hover {
+  opacity: 0.72;
+}
+
+/* --- end style ui-logo --- */

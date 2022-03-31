@@ -1,0 +1,20 @@
+mixin cardProduct(product)
+  // cardProduct
+  article(class='ui-cardProduct')
+    a(class='link' href='javascript:void(0);')
+    div(class='image')
+      img(srcset=`${require(`Images/products/${product.img}.png`)}, ${require(`Images/products/${product.img}-2x.png`)} 2x` 
+          src=require(`Images/products/${product.img}.png`) alt=`${product.name}`)
+    div(class='color' style=`--product-color: ${product.color};`)
+    div(class='body')
+      h3(class='title') #{product.name}
+      if product.badge
+        span(class='badge') #{product.badge}
+      p #{product.type}
+      p #{product.size}
+      p(class='price')
+        span #{product.price} ₽
+        span #{product.old_price} ₽
+    include ../btnLike/btnLike.pug
+  // end cardProduct
+  

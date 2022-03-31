@@ -1,0 +1,63 @@
+/* --- style ui-btnMenu --- */
+.ui-btnMenu {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(255, 255, 255, 0%);
+  color: inherit;
+  transition-duration: 0.4s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+.ui-btnMenu span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: currentcolor;
+  transition-duration: 0.4s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.ui-btnMenu span:nth-child(1) {
+  transform: translateY(2px) scaleY(0.75);
+}
+
+.ui-btnMenu span:nth-child(2) {
+  transform: translateY(-2px) scaleY(0.75);
+}
+
+.ui-btnMenu[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(5px) scaleY(1) rotateZ(45deg);
+}
+
+.ui-btnMenu[aria-expanded="true"] span:nth-child(2) {
+  transform: translateY(-5px) scaleY(1) rotateZ(-45deg);
+}
+
+@media not all and (any-pointer: coarse) {
+  .ui-btnMenu:hover {
+    color: var(--bs-secondary, #d0bc7a);
+  }
+
+  .ui-btnMenu:hover span {
+    transform: translateY(0) scaleY(0.75);
+  }
+}
+
+/* hover style for uikit page */
+.ui-btnMenu.hover {
+  color: var(--bs-secondary, #d0bc7a);
+}
+
+.ui-btnMenu.hover span {
+  transform: translateY(0) scaleY(0.75);
+}
+
+/* --- end style ui-btnMenu --- */

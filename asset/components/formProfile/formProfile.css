@@ -1,0 +1,56 @@
+/* --- style formProfile --- */
+.formProfile fieldset {
+  padding-top: var(--xl-space, 32px);
+  padding-bottom: var(--xl-space, 32px);
+}
+
+.formProfile fieldset::before {
+  position: absolute;
+  left: calc(var(--bs-gutter-x) / -2);
+  width: calc(100vw + var(--bs-gutter-x) / 2);
+  height: 1px;
+  background-color: var(--bs-gray, #ebebeb);
+  content: "";
+  transform: translateY(calc(var(--xl-space, 32px) * -1));
+}
+
+.formProfile fieldset:first-child::before {
+  display: none;
+}
+
+.formProfile legend {
+  margin-bottom: var(--xl-space, 32px);
+  font-size: var(--fs-3, 24px);
+  font-weight: 500;
+  line-height: var(--lh-3);
+}
+
+.formProfile [type="submit"] {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .formProfile fieldset {
+    padding-top: var(--xxxl-space, 80px);
+    padding-bottom: var(--xxxl-space, 80px);
+  }
+
+  .formProfile fieldset::before {
+    left: 0;
+    transform: translateY(calc(var(--xxxl-space, 80px) * -1));
+  }
+
+  .formProfile fieldset:first-child::before {
+    display: block;
+  }
+
+  .formProfile legend {
+    margin-bottom: var(--xxl-space, 48px);
+  }
+
+  .formProfile [type="submit"] {
+    width: auto;
+  }
+}
+
+/* --- end style formProfile --- */

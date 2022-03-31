@@ -1,0 +1,15 @@
+// header
+header(class='header')
+  div(class='box')
+    include ../UI/logo/logo.pug
+    include ../navProduct/navProduct.pug
+    // link-phone
+    a(class='ui-linkSecondary link-phone' href='tel:+78005553535' title='телефон')
+      span(class='icon')
+        svg(focusable='false' aria-hidden='true')
+          use(href='#icon-phone')
+      span(class='link-text') 8 (800) 555-35-35
+    // end link-phone
+    include ../navMain/navMain.pug
+    include ../menu/menu.pug
+// end header
