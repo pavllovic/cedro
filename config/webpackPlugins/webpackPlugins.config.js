@@ -104,7 +104,7 @@ const htmlWebpackPlagin = (isDev) => {
   return pages.map((page) => {
     return new HtmlWebpackPlagin({
       title: page.title,
-      filename: `_html/${page.name}.html`,
+      filename: isDev ? `_html/${page.name}.html` : `${page.name}.html`,
       template: `./asset/template/${page.name}.pug`,
       // inject: 'body',
       inject: false,

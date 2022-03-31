@@ -17,6 +17,9 @@ html(lang='ru')
       if file === '../asset/css/common.css'
         each file in htmlWebpackPlugin.files.extracted.css
           link(rel='stylesheet' href=`../${file.file}` media=`${file.query}`)
+      if file === 'asset/css/common.css'
+        each file in htmlWebpackPlugin.files.extracted.css
+          link(rel='stylesheet' href=`${file.file}` media=`${file.query}`)
   body
     block content
     each file in htmlWebpackPlugin.files.js
