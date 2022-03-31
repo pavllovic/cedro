@@ -68,6 +68,10 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.row-center {
+  display: flex;
+  justify-content: center;
+}
 .block {
   display: flex;
   flex-direction: column;

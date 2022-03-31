@@ -112,6 +112,7 @@ const htmlWebpackPlagin = (isDev) => {
       minify: {
         collapseWhitespace: !isDev,
         collapseInlineTagWhitespace: !isDev,
+        removeComments: !isDev,
         minifyCSS: !isDev,
         minifyJS: !isDev,
       },
