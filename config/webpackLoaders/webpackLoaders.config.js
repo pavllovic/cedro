@@ -51,17 +51,17 @@ const postcssLoader = (isDev, env) => {
   }
 };
 
-const sassLoader = () => {
-  return {
-    loader: 'sass-loader',
-    options: {
-      sourceMap: true,
-      // sassOptions: {
-      //   fiber: false,
-      // },
-    }
-  }
-};
+// const sassLoader = () => {
+//   return {
+//     loader: 'sass-loader',
+//     options: {
+//       sourceMap: true,
+//       // sassOptions: {
+//       //   fiber: false,
+//       // },
+//     }
+//   }
+// };
 
 const stylesLoaders = (isDev, env) => {
   return {
