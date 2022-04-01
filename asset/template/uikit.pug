@@ -690,7 +690,8 @@ block content
               <article class="ui-cardProduct">
                 <a class="link" href="javascript:void(0);"></a>
                 <div class="image">
-                  <img srcset="../asset/images/products/1.png, ../asset/images/products/1-2x.png 2x" src="../asset/images/products/1.png" alt="Brown to Blonde">
+                  //- <img srcset="asset/images/products/1.png, ../asset/images/products/1-2x.png 2x" src="../asset/images/products/1.png" alt="Brown to Blonde">
+                  img(srcset=`${require('Images/products/1.png')}, ${require('Images/products/1-2x.png')} 2x` src=require('Images/products/1.png') alt="Brown to Blonde")
                 </div>
                 <div class="color" style="--product-color: #C08D74;"></div>
                 <div class="body">
@@ -720,7 +721,8 @@ block content
               <article class="ui-cardProduct hover">
                 <a class="link" href="javascript:void(0);"></a>
                 <div class="image">
-                  <img srcset="../asset/images/products/1.png, ../asset/images/products/1-2x.png 2x" src="../asset/images/products/1.png" alt="Brown to Blonde">
+                  //- <img srcset="../asset/images/products/1.png, ../asset/images/products/1-2x.png 2x" src="../asset/images/products/1.png" alt="Brown to Blonde">
+                  img(srcset=`${require('Images/products/1.png')}, ${require('Images/products/1-2x.png')} 2x` src=require('Images/products/1.png') alt="Brown to Blonde")
                 </div>
                 <div class="color" style="--product-color: #C08D74;"></div>
                 <div class="body">
